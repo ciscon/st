@@ -458,7 +458,7 @@ static char ascii_printable[] =
 
 
 /* bg opacity */
-float alpha = 0.98, alphaUnfocused = 0.96;
+float alpha = 0.985, alphaUnfocused = 0.96;
 unsigned int bg = 256, bgUnfocused = 0;
 
 /* Terminal colors (16 first used in escape sequence) */
