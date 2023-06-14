@@ -456,12 +456,6 @@ static char ascii_printable[] =
 
 
 
-/* bg opacity */
-float alpha = 0.8;
-
-/* bg opacity */
-float alpha = 0.8, alphaUnfocused = 0.6;
-
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 
@@ -495,12 +489,10 @@ static const char *colorname[] = {
  * foreground, background, cursor
  */
 unsigned int defaultfg = 257;
-unsigned int defaultbg = 0;
+unsigned int defaultbg = 256;
 //cursor color
 unsigned int defaultcs = 10;
 unsigned int defaultrcs = 11;
-
-+unsigned int bg = 256, bgUnfocused = 0;
 
 /*
  * Colors used, when the specific fg == defaultfg. So in reverse mode this
